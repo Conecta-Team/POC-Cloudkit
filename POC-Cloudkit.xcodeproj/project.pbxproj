@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A200C02D26EF9A89005321BA /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200C02C26EF9A89005321BA /* CloudKitService.swift */; };
+		A21A226B26EF7F3D0052384A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21A226A26EF7F3D0052384A /* AppDelegate.swift */; };
+		A21A226D26EF7F3D0052384A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21A226C26EF7F3D0052384A /* SceneDelegate.swift */; };
+		A21A226F26EF7F3D0052384A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21A226E26EF7F3D0052384A /* ViewController.swift */; };
+		A21A227426EF7F400052384A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21A227326EF7F400052384A /* Assets.xcassets */; };
+		A21A227726EF7F400052384A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21A227526EF7F400052384A /* LaunchScreen.storyboard */; };
+		A21A228626EF89610052384A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21A228526EF89610052384A /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A200C02C26EF9A89005321BA /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		A21A226726EF7F3D0052384A /* POC-Cloudkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-Cloudkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21A226A26EF7F3D0052384A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A21A226C26EF7F3D0052384A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A21A226E26EF7F3D0052384A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A21A227326EF7F400052384A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A21A227626EF7F400052384A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A21A227826EF7F400052384A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21A228326EF89460052384A /* POC-Cloudkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "POC-Cloudkit.entitlements"; sourceTree = "<group>"; };
+		A21A228526EF89610052384A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A21A226426EF7F3D0052384A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21A228626EF89610052384A /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A21A225E26EF7F3D0052384A = {
+			isa = PBXGroup;
+			children = (
+				A21A226926EF7F3D0052384A /* POC-Cloudkit */,
+				A21A226826EF7F3D0052384A /* Products */,
+				A21A228426EF89610052384A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A21A226826EF7F3D0052384A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A21A226726EF7F3D0052384A /* POC-Cloudkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A21A226926EF7F3D0052384A /* POC-Cloudkit */ = {
+			isa = PBXGroup;
+			children = (
+				A21A228326EF89460052384A /* POC-Cloudkit.entitlements */,
+				A21A226A26EF7F3D0052384A /* AppDelegate.swift */,
+				A21A226C26EF7F3D0052384A /* SceneDelegate.swift */,
+				A21A226E26EF7F3D0052384A /* ViewController.swift */,
+				A21A227326EF7F400052384A /* Assets.xcassets */,
+				A21A227526EF7F400052384A /* LaunchScreen.storyboard */,
+				A21A227826EF7F400052384A /* Info.plist */,
+				A200C02C26EF9A89005321BA /* CloudKitService.swift */,
+			);
+			path = "POC-Cloudkit";
+			sourceTree = "<group>";
+		};
+		A21A228426EF89610052384A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A21A228526EF89610052384A /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A21A226626EF7F3D0052384A /* POC-Cloudkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21A227B26EF7F400052384A /* Build configuration list for PBXNativeTarget "POC-Cloudkit" */;
+			buildPhases = (
+				A21A226326EF7F3D0052384A /* Sources */,
+				A21A226426EF7F3D0052384A /* Frameworks */,
+				A21A226526EF7F3D0052384A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "POC-Cloudkit";
+			productName = "POC-Cloudkit";
+			productReference = A21A226726EF7F3D0052384A /* POC-Cloudkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A21A225F26EF7F3D0052384A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A21A226626EF7F3D0052384A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = A21A226226EF7F3D0052384A /* Build configuration list for PBXProject "POC-Cloudkit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A21A225E26EF7F3D0052384A;
+			productRefGroup = A21A226826EF7F3D0052384A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A21A226626EF7F3D0052384A /* POC-Cloudkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A21A226526EF7F3D0052384A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21A227726EF7F400052384A /* LaunchScreen.storyboard in Resources */,
+				A21A227426EF7F400052384A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A21A226326EF7F3D0052384A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200C02D26EF9A89005321BA /* CloudKitService.swift in Sources */,
+				A21A226F26EF7F3D0052384A /* ViewController.swift in Sources */,
+				A21A226B26EF7F3D0052384A /* AppDelegate.swift in Sources */,
+				A21A226D26EF7F3D0052384A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A21A227526EF7F400052384A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A21A227626EF7F400052384A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A21A227926EF7F400052384A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A21A227A26EF7F400052384A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A21A227C26EF7F400052384A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "POC-Cloudkit/POC-Cloudkit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				INFOPLIST_FILE = "POC-Cloudkit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "josejoao.POC-Cloudkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A21A227D26EF7F400052384A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "POC-Cloudkit/POC-Cloudkit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				INFOPLIST_FILE = "POC-Cloudkit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "josejoao.POC-Cloudkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A21A226226EF7F3D0052384A /* Build configuration list for PBXProject "POC-Cloudkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21A227926EF7F400052384A /* Debug */,
+				A21A227A26EF7F400052384A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21A227B26EF7F400052384A /* Build configuration list for PBXNativeTarget "POC-Cloudkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21A227C26EF7F400052384A /* Debug */,
+				A21A227D26EF7F400052384A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A21A225F26EF7F3D0052384A /* Project object */;
+}
