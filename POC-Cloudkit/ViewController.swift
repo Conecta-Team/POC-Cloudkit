@@ -13,6 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
 //        CloudKitService.currentModel.createNewRecord()
-        CloudKitService.currentModel.readGame()
+        CloudKitService.currentModel.edit()
     }
 }

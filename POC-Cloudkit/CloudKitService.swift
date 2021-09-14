@@ -35,85 +35,26 @@ class CloudKitService {
               print("results, errors")
             }
     }
-
-//    func readAll() {
-//        let predicate = NSPredicate(value: true)
-//
-//        let query = CKQuery(recordType: "User", predicate: predicate)
-//
-//        self.publicDatabase.perform(query, inZoneWith: CKRecordZone.default().zoneID) { (results, error) in
-//            if let erro = error {
-//                DispatchQueue.main.async {
-//                    completion(.failure(erro))
-//                }
-//            }
-//
-//            guard let result = results else {return}
-//
-//            let alunos = result.compactMap {
-//                Alunos(record: $0)
-//            }
-//
-//            DispatchQueue.main.async {
-//                completion(.success(alunos))
-//            }
-//        }
-//    }
-//    func editRecord(aluno: CKRecord) {
-//        aluno["Numero"] = 1
-//
-//        self.container.privateCloudDatabase.save(aluno) { (record, erro) in
-//
-//        }
-//    }
-//
-//    func delete(aluno: CKRecord.ID) {
-//
-//        self.container.privateCloudDatabase.delete(withRecordID: aluno) { (record, erro) in
-//
-//        }
-//    }
-//
-//    func fetchPrivateDB(_ completion: @escaping (CKRecord) -> Void) {
-//        let predicate = NSPredicate(value: true)
-//
-//        let query = CKQuery(recordType: "Alunos", predicate: predicate)
-//
-//        let operation = CKQueryOperation(query: query)
-//        operation.zoneID = CKRecordZone.default().zoneID
-//        operation.recordFetchedBlock = { record in
-//            completion(record)
-//        }
-//
-//        self.container.privateCloudDatabase.add(operation)
-//    }
     
-//    func addSub() {
-//        let sub = CKSubscription(coder: NSCoder())
-//
-//    }
+    func readUser(completion: @escaping ([CKRecord])->Void) {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "User", predicate: predicate)
+        
+        self.publicDatabase.perform(query, inZoneWith: CKRecordZone.default().zoneID) { (results, error) in
+                completion(results!)
+              print("results, errors")
+            }
+    }
+    
+    func edit() {
+        self.readUser { result in
+            let user = result[0]
+            user["name"] = "deu bonzao"
+            
+            self.container.publicCloudDatabase.save(user) { record, error in
+                print(record, error)
+            }
+        }
+    }
 
-//    func fetchAlunos(_ completion: @escaping (Result<[Alunos], Error>) -> Void) {
-//        let predicate = NSPredicate(value: true)
-//
-//        let query = CKQuery(recordType: "Alunos", predicate: predicate)
-//
-//        self.publicDatabase.perform(query, inZoneWith: CKRecordZone.default().zoneID) { (results, error) in
-//            if let erro = error {
-//                DispatchQueue.main.async {
-//                    completion(.failure(erro))
-//                }
-//            }
-//
-//            guard let result = results else {return}
-//
-//            let alunos = result.compactMap {
-//                Alunos(record: $0)
-//            }
-//
-//            DispatchQueue.main.async {
-//                completion(.success(alunos))
-//            }
-//        }
-//    }
 }
